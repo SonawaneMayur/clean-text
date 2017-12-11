@@ -1,4 +1,5 @@
 from nltk.tokenize import word_tokenize
+from nltk.tokenize import sent_tokenize
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 
@@ -9,8 +10,8 @@ text = file.read()
 file.close()
 
 # split into sentences
-sentences = sent_tokenize(text)
-print(sentences[0])
+#sentences = sent_tokenize(text)
+#print(sentences[0])
 
 # split into words
 tokens = word_tokenize(text)
